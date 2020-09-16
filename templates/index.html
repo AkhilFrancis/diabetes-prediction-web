@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello</title>
+</head>
+<body>
+<h1>Diabetes Prediction App</h1>
+<form method="POST" action="/">
+	Pregnancies :<input type="text" name="preg"><br>
+	Glucose :<input type="text" name="glucose"><br>
+	Blood Pressure :<input type="text" name="bp"><br>
+	Skin Thickness :<input type="text" name="skin"><br>
+	Insulin :<input type="text" name="insulin"><br>
+	BMI :<input type="text" name="bmi"><br>
+	Diabetes Pedigree Function :<input type="text" name="diabpedi"><br>
+	Age :<input type="text" name="age"><br>
+	<input type="submit">	
+</form>
+
+{% if resultstring %}
+<h1>{{resultstring}}</h1>
+{% endif %}
+</body>
+</html>
